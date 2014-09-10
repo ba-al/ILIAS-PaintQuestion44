@@ -103,6 +103,7 @@ class assPaintQuestionExport extends assQuestionExport
 			$a_xml_writer->xmlElement("fieldlabel", NULL, "backgroundimage");
 			$a_xml_writer->xmlElement("fieldentry", NULL, $base64);
 			$a_xml_writer->xmlEndTag("qtimetadatafield");				
+		}
 			$a_xml_writer->xmlStartTag("qtimetadatafield");	
 			$a_xml_writer->xmlElement("fieldlabel", NULL, "radiooption");
 			$a_xml_writer->xmlElement("fieldentry", NULL, $this->object->getRadioOption());
@@ -115,7 +116,6 @@ class assPaintQuestionExport extends assQuestionExport
 			$a_xml_writer->xmlElement("fieldlabel", NULL, "canvaswidth");
 			$a_xml_writer->xmlElement("fieldentry", NULL, $this->object->getCanvasWidth());
 			$a_xml_writer->xmlEndTag("qtimetadatafield");
-		}
 		// ende backgroundImage
 		
 		$a_xml_writer->xmlEndTag("qtimetadata");
